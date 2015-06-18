@@ -1,0 +1,26 @@
+# language: C
+C
+
+# parameter {N | N > 0}
+[N] -> {[] : N > 0}
+# Set the parameter name
+1
+N
+
+# Number of statements:
+1
+
+# Iteration domain
+[N] -> {[i, j] : 0 <= i < N and 0 <= j < N}
+0   0   0
+# Set the iterator names
+1
+i j
+
+1 # Scattering functions
+[N] -> {[i, j] -> [i + j, q, j] : exists r : j = 2*q + r and 0 <= r < 2}
+# Set the scattering dimension names
+1
+t processor p
+
+
